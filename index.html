@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>VidForge — Comic Studio (Demo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="brand">VidForge</div>
+      <div class="tag">AI Comic Studio — powered by your backend</div>
+    </header>
+    <main class="container">
+      <section class="controls">
+        <input id="title" placeholder="Comic title (optional)" />
+        <textarea id="prompt" placeholder="Describe your story or scene..."></textarea>
+        <div class="row">
+          <select id="style"><option value="marvel">Marvel-ish</option><option value="manga">Manga</option><option value="noir">Noir</option></select>
+          <input id="panels" type="number" value="6" min="1" max="12" />
+        </div>
+        <button id="generate">Generate Comic</button>
+        <div id="status" class="status"></div>
+      </section>
+      <section class="preview">
+        <div id="projectTitle" class="project-title"></div>
+        <div id="pages" class="pages"></div>
+      </section>
+    </main>
+    <footer class="footer">VidForge Demo — use with the included backend</footer>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
